@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -64,7 +64,8 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(darken($primary-color, 9), 0.9);
+    background: rgba(darken($primary-color, 9), 0.7);
+    backdrop-filter: blur(8px);
     list-style: none;
     transform: translate3d(
       0,
@@ -81,7 +82,8 @@
 
   // Branding side
   &-branding {
-    background: rgba(darken($secondary-color, 8), 0.9);
+    background: rgba(darken($secondary-color, 8), 0.7);
+    backdrop-filter: blur(9px);
     transform: translate3d(0, 100%, 0);
     // 100% pushes it all the way out of view at the bottom
     @include easeOut;
@@ -97,7 +99,7 @@
       background: url("../img/portrait.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 10px lightgray;
+      border: solid 10px $third-color;
     }
   }
 
@@ -116,9 +118,13 @@
       text-transform: uppercase;
       padding: 1rem 0;
       font-weight: 300;
-      color: #fff;
+      color: set-text-color($primary-color);
       text-decoration: none;
       @include easeOut;
+
+      &.current {
+        color: $third-color;
+      }
 
       &:hover {
         color: $secondary-color;
