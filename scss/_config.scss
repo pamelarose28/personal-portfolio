@@ -1,3 +1,6 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap");
+
 // Variables and Mixins
 
 $primary-color: #373a36;
@@ -7,6 +10,8 @@ $third-color: #6eb7ac;
 $show-home-image: true;
 $home-image: url(../img/workspace3.jpg);
 $background-opacity: 0.7;
+
+$background-image-overlay: url(../img/black-thread.png);
 
 @mixin easeOut {
   transition: all 0.3s ease-out;
@@ -29,6 +34,7 @@ $background-opacity: 0.7;
       height: 100%;
       z-index: -1;
       background: rgba($primary-color, $background-opacity);
+      backdrop-filter: blur(3px);
     }
   }
 }

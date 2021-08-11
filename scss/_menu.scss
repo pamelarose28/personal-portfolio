@@ -64,7 +64,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(darken($primary-color, 9), 0.7);
+    background: rgba(darken($primary-color, 9), 0.8);
     backdrop-filter: blur(8px);
     list-style: none;
     transform: translate3d(
@@ -82,7 +82,7 @@
 
   // Branding side
   &-branding {
-    background: rgba(darken($secondary-color, 8), 0.7);
+    background: rgba(darken($secondary-color, 8), 0.8);
     backdrop-filter: blur(9px);
     transform: translate3d(0, 100%, 0);
     // 100% pushes it all the way out of view at the bottom
