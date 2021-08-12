@@ -188,8 +188,10 @@ main {
     width: 250px; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1rem;
     backdrop-filter: blur(1.5px); }
+    .about-info .bio .handwriting-title-sm {
+      font-size: 2.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -230,6 +232,10 @@ main {
   font-size: 3rem;
   margin: 15px; }
 
+#contact {
+  background-color: #202220;
+  background-image: url(../img/black-thread.png); }
+
 .contact-sections {
   display: grid;
   grid-template-columns: 1fr 1fr; }
@@ -245,7 +251,10 @@ main {
     border: 2px solid white;
     border-radius: 5px;
     padding: 15px 5px;
-    margin: 10px; }
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1.5px);
+    box-shadow: 8px 15px 25px 3px rgba(0, 0, 0, 0.5); }
 
 .text-contact {
   color: #6eb7ac;
